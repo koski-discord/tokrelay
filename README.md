@@ -9,7 +9,7 @@ It is meant for previews, embeds, moderation logs, and link expanders. It does n
 ## Install
 
 ```bash
-pip install -e ".[discord,speed]"
+pip install git+https://github.com/koski-discord/tokrelay.git"
 ```
 
 ## Quick Use
