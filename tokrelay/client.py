@@ -13,7 +13,7 @@ from .models import Author, Engagement, MusicInfo, TikTokPost
 
 try:
     import orjson
-except ImportError:  # pragma: no cover - optional dependency
+except ImportError:
     orjson = None
 
 
@@ -249,4 +249,3 @@ def _first_url(*values: Any) -> str | None:
         if isinstance(value, str) and value.startswith(("http://", "https://")):
             return value
     return None
-

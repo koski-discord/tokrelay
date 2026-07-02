@@ -1,7 +1,6 @@
 [project]
 name = "tokrelay"
 version = "0.1.0"
-description = "Async TikTok metadata previews for Discord bots."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -21,4 +20,3 @@ speed = [
 [tool.ruff]
 line-length = 100
 target-version = "py310"
-

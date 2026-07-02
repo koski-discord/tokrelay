@@ -7,22 +7,22 @@ from pydantic import AnyUrl, BaseModel, Field
 
 
 class Author(BaseModel):
-    id: str | None = Field(default=None, description="TikTok author ID")
-    username: str | None = Field(default=None, description="Author username without @")
-    display_name: str | None = Field(default=None, description="Author display name")
-    avatar_url: AnyUrl | None = Field(default=None, description="Author avatar URL")
-    profile_url: AnyUrl | None = Field(default=None, description="Author profile URL")
+    id: str | None = None
+    username: str | None = None
+    display_name: str | None = None
+    avatar_url: AnyUrl | None = None
+    profile_url: AnyUrl | None = None
 
 
 class MusicInfo(BaseModel):
-    id: str | None = Field(default=None, description="Music ID")
-    title: str | None = Field(default=None, description="Sound title")
-    author: str | None = Field(default=None, description="Sound author")
-    album: str | None = Field(default=None, description="Sound album")
-    duration_seconds: int | None = Field(default=None, description="Sound duration in seconds")
-    cover_url: AnyUrl | None = Field(default=None, description="Sound cover URL")
-    play_url: AnyUrl | None = Field(default=None, description="Public sound URL when exposed")
-    is_original: bool | None = Field(default=None, description="Whether the sound is original")
+    id: str | None = None
+    title: str | None = None
+    author: str | None = None
+    album: str | None = None
+    duration_seconds: int | None = None
+    cover_url: AnyUrl | None = None
+    play_url: AnyUrl | None = None
+    is_original: bool | None = None
 
 
 class Engagement(BaseModel):
@@ -67,4 +67,3 @@ class TikTokPost(BaseModel):
             return datetime.fromtimestamp(int(value), tz=timezone.utc)
         except (TypeError, ValueError, OSError):
             return None
-

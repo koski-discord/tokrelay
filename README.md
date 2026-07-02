@@ -16,7 +16,7 @@ pip install -e ".[discord,speed]"
 
 ```python
 import asyncio
-from tokrelay import TikTokClient
+from tokrelay.client import TikTokClient
 
 async def main():
     async with TikTokClient() as client:
@@ -33,7 +33,7 @@ asyncio.run(main())
 Copy `.env.example` to `.env`, add your bot token, then run:
 
 ```bash
-python examples/discord_bot.py
+python examples/bot.py
 ```
 
 The bot watches for TikTok URLs and replies with a rich embed.
