@@ -30,7 +30,7 @@ asyncio.run(main())
 
 ## Discord Bot Example
 
-Copy `.env.example` to `.env`, add your bot token, then run:
+Set `DISCORD_TOKEN`, then run:
 
 ```bash
 python examples/bot.py
@@ -43,13 +43,3 @@ The bot watches for TikTok URLs and replies with a rich embed.
 - TikTok changes its page data often, so the oEmbed path is treated as the stable source.
 - Page scraping may return partial data depending on region, age gates, removed posts, or anti-bot responses.
 - Respect TikTok's terms and creators' rights when using media links.
-
-## Publish to GitHub
-
-Create a GitHub repository named `tokrelay`, then push this local folder:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/tokrelay.git
-git branch -M main
-git push -u origin main
-```
